@@ -22,14 +22,18 @@ def add_point( matrix, x, y, z=0 ):
     matrix[2].append(z)
     matrix[3].append(1.0)
 
-
+"""
 m = [[],[],[],[]]
+add_point(m, 100, 10, 0)
 add_point(m, 10, 10, 0)
-add_point(m, 11, 11, 0)
-add_edge(m, 12, 12, 0, 13, 13, 0)
+add_point(m, 10, 200, 0)
+add_point(m, 100, 200, 0)
+add_edge(m, 400, 200, 0, 250, 200, 0)
+add_edge(m, 250, 30, 0, 130, 50, 0)
+
 
 print_matrix(m)
-
+"""
 
 def draw_line( x0, y0, x1, y1, screen, color ):
 
@@ -115,5 +119,8 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     #end octants 2 and 7
 #end draw_line
 
-
-draw_lines(m, 400, 200)
+"""
+nScreen = new_screen(500, 500)
+draw_lines(m, nScreen, [255, 0, 0])
+save_ppm(nScreen, "picture.ppm")
+"""
