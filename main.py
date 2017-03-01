@@ -1,4 +1,4 @@
-from display import *
+"""from display import *
 from draw import *
 
 screen = new_screen()
@@ -8,3 +8,4 @@ matrix = new_matrix()
 
 draw_lines( matrix, screen, color )
 display(screen)
+"""
